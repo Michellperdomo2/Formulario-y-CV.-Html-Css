@@ -1,0 +1,91 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* CONTENEDOR GENERAL */
+.cv {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.header {
+  background-color: hotpink;
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* BLOQUE DE TEXTO */
+.info {
+  flex: 1;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header p {
+  margin: 5px 0;
+}
+
+/* IMAGEN */
+.header img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+
+/* CONTENIDO DE ABAJO */
+.contenido {
+  flex: 1;
+  display: flex;
+}
+
+/* COLUMNAS */
+.columna {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+.izquierda {
+  background-color: lightpink;
+}
+
+.derecha {
+  background-color: pink;
+}
+
+/* TÍTULOS */
+h2 {
+  color: deeppink;
+  border-bottom: 2px solid hotpink;
+  padding-bottom: 5px;
+}
+
+/* LISTAS */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* TEXTO */
+p {
+  line-height: 1.5;
+}

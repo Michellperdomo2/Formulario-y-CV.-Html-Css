@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Formulario de Inscripción</title>
+<link rel="stylesheet" href="FormularioV1.css">
+</head>
+
+<body>
+<div class="formulario">
+<center>
+<h2>Formulario de Inscripción</h2>
+</center>
+<center>
+<img src="imagen1 (1).png" width="300">
+</center>
+<form>
+
+<br>
+<div class="campo">
+Tipo de Documento:
+<select required>
+<option value="">Seleccione</option>
+<option>Cédula</option>
+<option>Tarjeta de identidad</option>
+<option>Cédula de extranjería</option>
+</select>
+</div>
+<br>
+<div class="campo">
+Número de Documento:
+<input type="text"  pattern="[0-9]{5,15}" placeholder="Solo números" required>
+</div>
+<br>
+<div class="campo">
+Nombres:
+<input type="text" minlength="3" maxlength="64"
+pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+" required>
+</div>
+<br>
+<div class="campo">
+Primer Apellido:
+<input type="text" minlength="3" maxlength="64"
+pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+" required>
+</div>
+<br>
+<div class="campo">
+Segundo Apellido:
+<input type="text" minlength="3" maxlength="64"
+pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+" required>
+</div>
+<br>
+
+<div class="campo">
+Ciudad:
+<select required>
+<option value="">Seleccione</option>
+<option>Bogotá</option>
+<option>Cartagena</option>
+<option>Medellín</option>
+<option>Cali</option>
+<option>Barranquilla</option>
+<option>Bucaramanga</option>
+<option>Santa Marta</option>
+<option>Ibagué</option>
+<option>Neiva</option>
+<option>Tunja</option>
+</select>
+</div>
+<br>
+
+<div class="campo">
+Dirección:
+<input type="text" placeholder="manzana, calle/carrera" required>
+</div>
+<br>
+<div class="campo">
+Teléfono fijo:
+<input type="tel" pattern="[0-9]{10}" placeholder="10 dígitos">
+</div>
+<br>
+<div class="campo">
+Teléfono celular:
+<input type="tel" pattern="[0-9]{10}" placeholder="10 dígitos" required>
+</div>
+<br>
+<div class="campo">
+Correo electrónico:
+<input type="email" placeholder="ej.pepito2@gmail" required>
+</div>
+<br>
+<div class="campo">
+Usuario:
+<input type="text" minlength="3" maxlength="16" placeholder="Ej: Usuario12" required>
+</div>
+<br>
+<div class="campo">
+Password:
+<input type="password" maxlength="16" placeholder="16 caracteres" required>
+</div>
+<br>
+<div class="campo">
+Fecha de inscripción:
+<input type="date" min="2026-02-15" max="2026-03-06" required>
+</div>
+<br>
+
+<div class="campo">
+Intereses:
+<br>
+<input type="checkbox"> Descansar
+<input type="checkbox"> Deportes
+<input type="checkbox"> Música
+<input type="checkbox"> Videojuegos
+<input type="checkbox"> Viajar
+<br><br>
+Otros: <input type="text">
+</div>
+
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpiar">
+
+</form>
+</div>
+
+</body>
+</html> 
